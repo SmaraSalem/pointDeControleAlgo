@@ -1,0 +1,37 @@
+ALGORITHM algorithm_name
+VAR
+   nbMots : INTEGER := 0;
+   nbVoyl : INTEGER := 0 ;
+   
+     i,j: INTEGER;
+
+    l :INTEGER :=0;
+     ch : STRING;
+BEGIN
+
+WHILE (ch(l)<>".") DO
+    l+ = 1;
+END_WHILE
+  l+=1;
+ for i FROM 0 TO l-1 STEP i++  DO
+      SWITCH (ch(i)) DO
+          case a : nbVoyl + :=1;
+          case e : nbVoyl + :=1;
+          case i : nbVoyl + :=1;
+          case u : nbVoyl + :=1;
+         case y : nbVoyl + :=1;
+          case o : nbVoyl + :=1;
+         default :  ;
+      END_SWITCH
+   END_FOR
+FOR j FROM 0 TO l-1 STEP j++  DO
+    IF (ch(j)=" ") THEN
+        nbMots + = 1 ;
+    END_IF
+END_FOR
+
+write(l);
+write(nbMots);
+write(nbVoyl);
+
+END
